@@ -53,13 +53,64 @@ body {
 .nav-links {
     display: flex;
     gap: var(--space-medium);
+
 }
 
 .nav-a {
     color: var(--color-light);
     text-decoration: none;
+    transition: all 0.3s ease-in;
+
+}
+
+.nav-a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    display: block;
+
 }
 
 .header-control {
     background-color: var(--color-light);
+}
+
+.menu_toggle {
+    display: none;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url(https://comebackvinyl.com/cdn/shop/files/IndieExclusives_800.jpg?v=1705350434&width=1500);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+.hero-header {
+    font-size: var(--header-font);
+    margin-bottom: var(--space-medium);
+
 }
