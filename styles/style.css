@@ -23,6 +23,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,7 @@ body {
 .nav-links {
     display: flex;
     gap: var(--space-medium);
+    font-size: var(--font-size);
 
 }
 
@@ -76,4 +78,13 @@ body {
 
 .menu_toggle {
     display: none;
+}
+
+.hero-section img {
+    height: 90vh;
+}
+
+.hero-paragraph {
+    font-size: var(--font-size);
+    font-weight: 500;
 }
